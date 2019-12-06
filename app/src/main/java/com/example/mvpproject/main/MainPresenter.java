@@ -2,7 +2,7 @@ package com.example.mvpproject.main;
 
 
 /**
- * Responsible for handling the actions from the view and updating the UI as required
+ * Responsible for handling the actions from the view and updating the UI {@link MainActivity} as required
  */
 public class MainPresenter implements MainContract.mvpPresenter {
 
@@ -12,4 +12,16 @@ public class MainPresenter implements MainContract.mvpPresenter {
         mvpView = view;
     }
 
+
+    ///  presenter methods  ////
+    @Override
+    public void handleSignInButtonClicks() {
+        mvpView.showSignInScreen();
+
+    }
+
+    @Override
+    public void handleSignUpButtonClicks() {
+        mvpView.showSignUpScreen();
+    }
 }

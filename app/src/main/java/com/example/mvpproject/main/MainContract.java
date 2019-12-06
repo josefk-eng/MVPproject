@@ -7,9 +7,17 @@ public interface MainContract {
 
     interface mvpView{
 
+        void showSignInScreen();
+
+        void showSignUpScreen();
+
     }
 
     interface mvpPresenter{
+
+        void handleSignInButtonClicks();
+
+        void handleSignUpButtonClicks();
 
     }
 }
