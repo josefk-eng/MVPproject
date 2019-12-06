@@ -11,7 +11,6 @@ import com.example.mvpproject.R;
  * This displays the main screen
  */
 public class MainActivity extends AppCompatActivity implements MainContract.mvpView {
-
     private MainPresenter presenter;
 
     @Override
